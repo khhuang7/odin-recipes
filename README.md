@@ -1,0 +1,1 @@
+This project is a basic recipe website to practise use of HTML. Functionality includes a main index page, relative links, and basic formatting.
