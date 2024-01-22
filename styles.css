@@ -3,9 +3,11 @@
 }
 
 h1 {
-    background-color:rgb(0, 0, 110);
+    background-color: #556b2f;
     color: white;
     text-align: center;
+    width: 75%;
+    margin: 0 auto
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,11 +18,11 @@ ol, ul {
     line-height: 130%
 }
 
-img {
+.hero {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%
+    width: 75%
 }
 
 .ingredients,
@@ -32,4 +34,17 @@ img {
 
 .recipe-source {
     font-style: italic
+}
+
+.image-container {
+    position: relative;
+    text-align: center
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #556b2f90;
 }
