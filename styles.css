@@ -1,12 +1,22 @@
+html {
+    box-sizing: border-box
+}
+
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
 }
 
 h1 {
     background-color: #556b2f;
     color: white;
+    width: 630px;
     text-align: center;
-    width: 75%;
     margin: 0 auto
 }
 
@@ -22,7 +32,61 @@ ol, ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%
+    width: 630px
+}
+
+
+/* enable text positioning over an image */
+.image-container {
+    position: relative;
+    text-align: center
+}
+
+/* applies only to index.html title */
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #556b2f90;
+    padding: 30px
+}
+
+/* for menu buttons */
+.menu-container {
+    display: block;
+    text-align: center
+}
+
+.menu-link {
+    /* Set to inline-block so that text and image stay fitted to container */
+    display: inline-block;
+    width: 20%;
+    margin: 10px
+}
+
+/* Fixed height is problematic if the window is resized and text goes over 4 lines, but assume this can be fixed by implementing Flex instead later */
+.menu-text {
+    background-color: #556b2f;
+    font-size: 20px;
+    font-weight: bold;
+    height: 80px;
+    width: 100%;
+    position: relative
+}
+
+/* Center text inside text box */
+.menu-text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0
+}
+
+.menu-image {
+    width: 100%
 }
 
 .ingredients,
@@ -36,15 +100,6 @@ ol, ul {
     font-style: italic
 }
 
-.image-container {
-    position: relative;
-    text-align: center
-}
-
-#title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #556b2f90;
+a:visited {
+    color: #dae7e8
 }
